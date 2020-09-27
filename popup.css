@@ -1,0 +1,10 @@
+body {
+    height: 320px;
+    width: 320px;
+}
+#sync {
+    background-color: red;
+}
+#sync:active {
+    background-color: yellow;
+}
