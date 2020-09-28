@@ -2,7 +2,9 @@
     "name": "Anki Web Reader",
     "version": "1.0",
     "description": "Replace words with translations you've learnt while browsing the web",
-    "permissions": [],
+    "permissions": [
+      "http://localhost/"
+    ],
     "background": {
       "scripts": ["background.js"],
       "persistent": false
