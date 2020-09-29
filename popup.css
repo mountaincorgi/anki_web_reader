@@ -1,10 +1,11 @@
 body {
-    height: 320px;
-    width: 320px;
+    height: 100px;
+    width: 100px;
 }
-#sync {
-    background-color: red;
+#magic {
+    text-align: center;
+    background-color: greenyellow;
 }
-#sync:active {
+#magic:active {
     background-color: yellow;
 }
