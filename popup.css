@@ -1,6 +1,12 @@
 body {
-    height: 100px;
-    width: 100px;
+    height: 250px;
+    width: 200px;
+}
+.tab-toggle:hover {
+    background-color: indianred;
+}
+.tab-toggle.active {
+    background-color: lawngreen;
 }
 #magic {
     text-align: center;
@@ -8,4 +14,8 @@ body {
 }
 #magic:active {
     background-color: yellow;
+}
+
+.tab-content {
+    display: none;
 }

@@ -3,6 +3,7 @@
     "version": "1.0",
     "description": "Replace words with translations you've learnt while browsing the web",
     "permissions": [
+      "storage",
       "http://localhost/"
     ],
     "background": {
@@ -14,6 +15,5 @@
       "default_icon": {}
     },
     "icons": {},
-    "options_page": "options.html", 
     "manifest_version": 2
   }

@@ -6,7 +6,26 @@
         <link rel="stylesheet" href="popup.css">
     </head>
     <body>
-        <p><button id="magic">Sync</button></p>
+        <!-- Tab strip -->
+        <div class="tab-strip">
+            <button id="info-button" class="tab-toggle">Info</button>
+            <button id="settings-button" class="tab-toggle">Settings</button>
+        </div>
+
+        <!-- Tab views -->
+        <!-- Info tab -->
+        <div id="info-tab" class="tab-content">
+            <p><button id="magic">Sync</button></p>
+            <h2>Current Deck</h2>
+            <div><input id="deck-info" type="text" value="thai1000words" readonly></div>
+        </div>
+
+        <!-- Settings tab -->
+        <div id="settings-tab" class="tab-content">
+            <h2>Deck</h2>
+            <div><input id="deck-input" type="text"></div>
+            <button id="save-button">Save</button>
+        </div>
 
         <script src="popup.js"></script>
     </body>
