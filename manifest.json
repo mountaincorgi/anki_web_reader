@@ -3,6 +3,7 @@
     "version": "1.0",
     "description": "Replace words with translations you've learnt while browsing the web",
     "permissions": [
+      "tabs",
       "storage",
       "http://localhost/"
     ],
@@ -15,5 +16,11 @@
       "default_icon": {}
     },
     "icons": {},
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["replace.js"]
+      }
+    ],
     "manifest_version": 2
   }

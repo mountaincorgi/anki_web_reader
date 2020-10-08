@@ -1,14 +1,3 @@
-/*
-NOTES
-
-Anki query options: https://docs.ankiweb.net/#/searching - happy querying!
-*/
-
-/*
-TASKS
-3. Search the html of a page and replace words 
-*/
-
 const magicButton = document.getElementById('magic');
 
 magicButton.addEventListener('click', function() {
@@ -66,11 +55,14 @@ magicButton.addEventListener('click', function() {
                 tPairs.push(p);
             }
             console.log(tPairs);
+            chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+                chrome.tabs.sendMessage(tabs[0].id, {pairs: tPairs}, function(response) {
+                    console.log(response);
+                });
+            });
         });
     });
 });
-
-
 
 /*
 Tabs
@@ -115,12 +107,4 @@ saveButton.addEventListener('click', function() {
     chrome.storage.sync.set({'currentDeck': deckName}, function() {
         console.log('New deck set');
     });
-});
-
-/*
-Load current deck to info page
-*/
-chrome.storage.sync.get('currentDeck', function(data) {
-    let di = document.getElementById('deck-info');
-    di.setAttribute('value', data.currentDeck);
 });

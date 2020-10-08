@@ -2,20 +2,47 @@ body {
     height: 250px;
     width: 200px;
 }
+.tab-toggle {
+    border-color: navy;
+    color: navy;
+    background-color: white;
+    border-radius: 10px;
+    outline: 0;
+}
 .tab-toggle:hover {
-    background-color: indianred;
+    background-color: navy;
+    color: lawngreen;
 }
 .tab-toggle.active {
     background-color: lawngreen;
+    color: navy;
+}
+.tab-toggle.active:hover {
+    background-color: navy;
+    color: lawngreen;
 }
 #magic {
-    text-align: center;
-    background-color: greenyellow;
+    border-radius: 10px;
+    background-color: white;
+    border-color: orangered;
+    color: orangered;
+    outline: 0;
 }
 #magic:active {
-    background-color: yellow;
+    background-color: orangered;
+    color: white;
 }
-
+#save-button {
+    background-color: white;
+    color: indigo;
+    border-color: indigo;
+    border-radius: 10px;
+    outline: 0;
+}
+#save-button:active {
+    background-color: indigo;
+    color: white;
+}
 .tab-content {
     display: none;
 }
